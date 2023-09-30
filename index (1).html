@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>NASA Image of the Day</title>
 </head>
 <body>
-    <div class="nav">
-        <div class="item"><a href="#">Signup</a></div>
-        <div class="item"><a href="index.html">Profile</a></div>
-    </div>
-
-    <div class="main">
-        <h1>Signup</h1>
+    <div class="container-img">
+        <div>
+            <h1>NASA Image of the Day</h1>
+        </div>
+        <div id="current-image-container">
+            <!-- Current image of the day will be displayed here -->
+        </div>
         
-            <input type="text" id="username" placeholder="Full Name">
-            <input type="email" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password">
-            <input type="password" id="Cpassword" placeholder="Confirm Password">
-        
-
-        <div id="Smessage"></div>
-        <div id="emsg"></div>
-
-        <button id="Signup">Signup</button>
     </div>
-
+    <h2>Search for a picture of the day</h2>
+    <div>
+        <form id="search-form">
+            <label for="search-input">Select a Date:</label>
+            <input type="date" id="search-input" required>
+            <button type="submit">Search</button>
+        </form>
+        <h2>Previous Searchs</h2>
+        <ul id="search-history">
+            <!-- Search history will be displayed here -->
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
